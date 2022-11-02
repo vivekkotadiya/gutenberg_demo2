@@ -43,7 +43,7 @@ function inxperts_gutenberg_blocks_assets(){
 
 			wp_localize_script('inxperts-gutenberg-blocks-editor', 'WPURLS', array('siteurl' => get_option('siteurl')));
 		}
-		wp_enqueue_script( 'igb-google', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBvAWzBtGKNnk9Tgc1GYHjwLGzJTCmjVTA&v=weekly', '', 1.0, false);
+		wp_enqueue_script( 'igb-google', 'https://maps.googleapis.com/maps/api/js?key={google-map-api-key}&v=weekly', '', 1.0, false);
 
 }
 
