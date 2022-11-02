@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-blog-preview",
+	"version": "0.1.5",
+	"attributes": {
+        "postType": {
+            "type": "string",
+            "default": "post"
+        }
+	},
+	"title": "Blog Preview",
+	"category": "theme",
+	"description": "A gutenberg block to Generate Blog Preview.",
+	"keywords": [ "blog", "inxpert" ],
+	"textdomain": "inxperts-gutenberg-blocks"
+}

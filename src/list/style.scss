@@ -1,0 +1,31 @@
+.ul-style{
+    &-one{
+        list-style-type: disc;
+    }
+    &-two{
+        list-style-type: square;
+    }
+    &-three{
+        list-style-type: decimal;
+    }
+}
+.igb-lists{
+    width: 100%;
+    &.ul-al{
+        &-left{
+            li{
+                text-align: left;
+            }
+        }
+        &-center{
+            li{
+                text-align: center;
+            }
+        }
+        &-right{
+            li{
+                text-align: right;
+            }
+        }
+    }
+}

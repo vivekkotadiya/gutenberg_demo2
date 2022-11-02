@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-button",
+	"version": "0.1.5",
+	"title": "Button",
+	"category": "theme",
+    "keywords": ["button", "link", "inxperts"],
+	"description": "A gutenberg block to use for Button.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"style" : {
+			"type": "string",
+			"default": "one"
+		},
+        "align" : {
+            "type": "string",
+            "default": "center"
+        },
+        "width" : {
+            "type": "string",
+            "default": "in"
+        },
+        "linkTarget": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "target"
+		},
+		"rel": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "rel"
+		},
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": "a"
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "href"
+		}
+	},
+	"textdomain": "inxperts-gutenberg-blocks"
+}

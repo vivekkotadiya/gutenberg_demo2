@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/heading",
+	"version": "0.1.5",
+	"title": "Heading",
+	"category": "theme",
+	"keywords": [ "title", "subtitle" ],
+	"description": "A gutenberg block to use for Heading.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"textAlign": {
+			"type": "string",
+			"default": "text-left"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1,h2,h3,h4,h5,h6",
+			"default": ""
+		},
+		"level": {
+			"type": "number",
+			"default": 1
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Heading"
+		},
+		"style": {
+			"type": "string",
+			"default": "text-grey"
+		}
+	},
+	"textdomain": "inxperts-gutenberg-blocks"
+}

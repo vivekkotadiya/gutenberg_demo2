@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-contactinfo",
+	"version": "0.1.5",
+	"title": "Contact Details",
+	"category": "theme",
+    "keywords": ["contact", "detail", "contact list", "inxperts"],
+	"description": "A gutenberg block to use for Contact Detail List.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"default": "in Berlin"
+		},
+		"address": {
+			"type": "string",
+			"default": "Wiebestraße 36 – 37, 10553 Berlin"
+		},
+		"telefon": {
+			"type": "string",
+			"default": "+49173 799 0900"
+		},
+		"telefonLink": {
+			"type": "string",
+			"default": "tel:491737990900"
+		},
+		"email": {
+			"type": "string",
+			"default": "info@in-xperts.eu"
+		},
+		"emailLink": {
+			"type": "string",
+			"default": "mailto:info@in-xperts.eu"
+		}
+	},
+	"textdomain": "inxperts-gutenberg-blocks"
+}

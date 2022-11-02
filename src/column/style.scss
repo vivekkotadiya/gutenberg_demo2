@@ -1,0 +1,148 @@
+@import "../../assets/scss/variables/variables";
+.col--*-pd-0{
+    padding: 0px;
+}
+.col--xs-pd-1{
+    padding: $pd-1!important;
+}
+.col--xs-pd-2{
+    padding: $pd-2!important;
+}
+.col--xs-pd-3{
+    padding: $pd-3!important;
+}
+.col.top-xs{
+    align-items: flex-start;
+}
+.col.middle-xs{
+    align-items: center;
+}
+.col.bottom-xs{
+    align-items: flex-end;
+}
+.col.start-xs{
+    justify-content: flex-start;
+}
+.col.center-xs{
+    justify-content: center;
+}
+.col.end-xs{
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: $breakpoint-xl){
+    .col--xl-pd-1{
+        padding: $pd-1!important;
+    }
+    .col--xl-pd-2{
+        padding: $pd-2!important;
+    }
+    .col--xl-pd-3{
+        padding: $pd-3!important;
+    }
+    .col.top-xl{
+        align-items: flex-start;
+    }
+    .col.middle-xl{
+        align-items: center;
+    }
+    .col.bottom-xl{
+        align-items: flex-end;
+    }
+    .col.start-xl{
+        justify-content: flex-start;
+    }
+    .col.center-xl{
+        justify-content: center;
+    }
+    .col.end-xl{
+        justify-content: flex-end;
+    }
+}
+@media only screen and (max-width: $breakpoint-lg){
+    .col--lg-pd-1{
+        padding: $pd-1!important;
+    }
+    .col--lg-pd-2{
+        padding: $pd-2!important;
+    }
+    .col--lg-pd-3{
+        padding: $pd-3!important;
+    }
+    .col.top-lg{
+        align-items: flex-start;
+    }
+    .col.middle-lg{
+        align-items: center;
+    }
+    .col.bottom-lg{
+        align-items: flex-end;
+    }
+    .col.start-lg{
+        justify-content: flex-start;
+    }
+    .col.center-lg{
+        justify-content: center;
+    }
+    .col.end-lg{
+        justify-content: flex-end;
+    }
+}
+@media only screen and (max-width: $breakpoint-md){
+    .col--md-pd-1{
+        padding: $pd-1!important;
+    }
+    .col--md-pd-2{
+        padding: $pd-2!important;
+    }
+    .col--md-pd-3{
+        padding: $pd-3!important;
+    }
+    .col.top-md{
+        align-items: flex-start;
+    }
+    .col.middle-md{
+        align-items: center;
+    }
+    .col.bottom-md{
+        align-items: flex-end;
+    }
+    .col.start-md{
+        justify-content: flex-start;
+    }
+    .col.center-md{
+        justify-content: center;
+    }
+    .col.end-md{
+        justify-content: flex-end;
+    }
+}
+@media only screen and (max-width: $breakpoint-sm ){
+    .col--sm-pd-1{
+        padding: $pd-1!important;
+    }
+    .col--sm-pd-2{
+        padding: $pd-2!important;
+    }
+    .col--sm-pd-3{
+        padding: $pd-3!important;
+    }
+    .col.top-sm{
+        align-items: flex-start;
+    }
+    .col.middle-sm{
+        align-items: center;
+    }
+    .col.bottom-sm{
+        align-items: flex-end;
+    }
+    .col.start-md{
+        justify-content: flex-start;
+    }
+    .col.center-md{
+        justify-content: center;
+    }
+    .col.end-md{
+        justify-content: flex-end;
+    }
+}

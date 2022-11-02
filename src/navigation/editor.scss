@@ -1,0 +1,33 @@
+@import "../../assets/scss/variables/variables";
+.wp-block-inxperts-gutenberg-blocks-inxperts-navigation {
+
+	.components-base-control__field {
+		min-width: 180px;
+	}
+}
+.wp-block-inxperts-gutenberg-blocks-inxperts-navigation div{
+	color: $ligh-grey;
+}
+@media only screen and (max-width: 999px){
+	.site-logo{
+		width: 200px;
+		> div{
+			width: 100%!important;
+		}
+	}
+	.header-wrapper{
+		.wp-block-inxperts-gutenberg-blocks-inxperts-navigation{
+			> div{
+				width: 35px;
+				height: 40px;
+				> div {
+					width: 100%;
+				}
+				.mobile_menu{
+					right: 0px;
+					top: 0px;
+				}
+			}
+		}
+	}
+}

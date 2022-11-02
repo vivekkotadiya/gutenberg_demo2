@@ -1,0 +1,141 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-column",
+	"version": "0.1.5",
+	"title": "Grid - Column",
+	"category": "theme",
+	"description": "A gutenberg block to use Column.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"colResponsiveMode": {
+			"type": "string",
+			"default": "xs"
+		},
+		"backgroundColor": {
+			"type":"string",
+			"default": ""
+		},
+		"colbgClass": {
+			"type":"string",
+			"default": ""
+		},
+		"xlwidth" : {
+			"type": "number",
+			"default": 6
+		},
+        "lgwidth" : {
+			"type": "number",
+			"default": 6
+		},
+        "mdwidth" : {
+			"type": "number",
+			"default": 6
+		},
+        "smwidth" : {
+			"type": "number",
+			"default": 6
+		},
+        "xswidth" : {
+			"type": "number",
+			"default": 6
+		},
+		"xloffset" : {
+			"type": "number",
+			"default": 0
+		},
+        "lgoffset" : {
+			"type": "number",
+			"default": 0
+		},
+        "mdoffset" : {
+			"type": "number",
+			"default": 0
+		},
+        "smoffset" : {
+			"type": "number",
+			"default": 0
+		},
+        "xsoffset" : {
+			"type": "number",
+			"default": 0
+		},	
+		"xlcolPadding" : {
+			"type": "number",
+			"default": 1
+		},
+        "lgcolPadding" : {
+			"type": "number",
+			"default": 1
+		},
+        "mdcolPadding" : {
+			"type": "number",
+			"default": 1
+		},
+        "smcolPadding" : {
+			"type": "number",
+			"default": 1
+		},
+        "xscolPadding" : {
+			"type": "number",
+			"default": 1
+		},
+		"xlalignH" : {
+			"type": "string",
+			"default": "start"
+		},
+        "lgalignH" : {
+			"type": "string",
+			"default": "start"
+		},
+        "mdalignH" : {
+			"type": "string",
+			"default": "start"
+		},
+        "smalignH" : {
+			"type": "string",
+			"default": "start"
+		},
+        "xsalignH" : {
+			"type": "string",
+			"default": "start"
+		},
+		"xlalignV" : {
+			"type": "string",
+			"default": "top"
+		},
+        "lgalignV" : {
+			"type": "string",
+			"default": "top"
+		},
+        "mdalignV" : {
+			"type": "string",
+			"default": "top"
+		},
+        "smalignV" : {
+			"type": "string",
+			"default": "top"
+		},
+        "xsalignV" : {
+			"type": "string",
+			"default": "top"
+		},
+		"hideonDesktop": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideonTablet": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideonMobile": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"keywords": ["column", "inxperts"],
+	"textdomain": "inxperts-gutenberg-blocks"
+}

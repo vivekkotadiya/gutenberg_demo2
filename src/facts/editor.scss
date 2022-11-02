@@ -1,0 +1,21 @@
+.facts--wrap{
+    .block-editor-inner-blocks{
+        .block-editor-block-list__layout{
+            .block-editor-default-block-appender{
+                height: 100%;
+                width: 100%;
+                display: block;
+                .block-editor-default-block-appender__content{
+                    padding: 33px 0px 36px;
+                    border: 2px dashed #8B8B8B;
+                    text-align: center; 
+                }
+            }
+            > p{
+                padding: 33px 0px 36px;
+                border: 2px dashed #8B8B8B;
+                text-align: center;
+            }
+        }
+    }
+}

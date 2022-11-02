@@ -1,0 +1,38 @@
+@import "../../assets/scss/variables/variables";
+.wp-block-inxperts-social-links__list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    > li{
+        &:not(:last-child){
+            padding-right: 32.9px;
+        }
+        display: inline-block;
+        > a{
+            text-decoration: none;
+            svg{
+                width: 20px;
+                height: 20px;
+                fill: $ligh-grey;
+                vertical-align: middle;
+            }
+            &:hover{
+                svg {
+                    fill: $primary;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-xs) {
+	footer{
+		.inxperts-gutenberg-blocks-social-media{
+			width: 100%;
+            text-align: center;
+            .inxperts-social-media {
+                margin-top: 10px;
+            }
+		}
+	}
+}

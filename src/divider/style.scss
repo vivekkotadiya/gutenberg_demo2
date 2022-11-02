@@ -1,0 +1,34 @@
+@import "../../assets/scss/variables/variables";
+.dv-top-s{
+    padding-top: $pd-1;
+}
+.dv-top-m{
+    padding-top: $pd-2;
+}
+.dv-top-l{
+    padding-top: $pd-3;
+}
+.dv-top-xl{
+    padding-top: $pd-4;
+}
+.dv-bottom-s{
+    padding-bottom: $pd-1;
+}
+.dv-bottom-m{
+    padding-bottom: $pd-2;
+}
+.dv-bottom-l{
+    padding-bottom: $pd-3;
+}
+.dv-bottom-xl{
+    padding-bottom: $pd-4;
+}
+hr.light-grey{
+    border-color: #EBEBEB;
+}
+hr.dark-grey{
+    border-color: $secondary;
+}
+hr.orange{
+    border-color: $primary;
+}

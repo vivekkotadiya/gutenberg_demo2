@@ -1,0 +1,122 @@
+@import "../../assets/scss/variables/variables";
+
+.wp-block-igb-logo-slider__igb-logo-slider_container{
+    background-color: #F5F5F5;
+    position: relative;
+    .igb-logo-slider{
+        .glide__slides{
+            align-items: center;
+        }
+        .logo-slider-controls{
+            display: none;
+        }
+        &[data-navigation="true"]{
+            .logo-slider-controls{
+                display: block;
+                transition: .5s all;
+            }
+        }
+        .igb-logo-slide-main-wrapper{
+            .logo-slide-image{
+                display: flex;
+                margin: 0px;
+                justify-content: center;
+            }
+        }
+        .logo-slider-controls{
+            button{
+                position: absolute;
+                border-radius: 100px;
+                background-color: $primary;
+                border: 0px;
+                cursor: pointer;
+                text-align: center;
+                &.next-slide{
+                    transform: rotate(180deg);
+                }
+                svg{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-md-large) {
+    .wp-block-igb-logo-slider__igb-logo-slider_container{
+        padding: 100px 80px;
+        .igb-logo-slider{
+            .logo-slider-controls{
+                button{
+                    top: calc(50% - 32px / 2 );
+                    width: 32px;
+                    height: 32px;
+                    &.prev-slide{
+                        left: 29px;
+                    }
+                    &.next-slide{
+                        right: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-md) {
+    .wp-block-igb-logo-slider__igb-logo-slider_container{
+        padding: 69px 100px 78px;
+        .igb-logo-slider{
+            .logo-slider-controls{
+                button{
+                    top: calc(50% - 26px / 2 );
+                    width: 26px;
+                    height: 26px;
+                    &.prev-slide{
+                        left: 20px;
+                    }
+                    &.next-slide{
+                        right: 20px;
+                    }
+                    svg{
+                        width: 5.79px;
+                        height: 11.57px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-sm) {
+    .wp-block-igb-logo-slider__igb-logo-slider_container{
+        padding-left: 80px;
+        padding-right: 80px;
+        .igb-logo-slider{
+            .logo-slider-controls{
+                button{
+                    &.prev-slide{
+                        left: 23px;
+                    }
+                    &.next-slide{
+                        right: 23px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-xs) {
+    .wp-block-igb-logo-slider__igb-logo-slider_container{
+        padding: 69px 60px;
+        .igb-logo-slider{
+            .logo-slider-controls{
+                button{
+                    &.prev-slide{
+                        left: 12px;
+                    }
+                    &.next-slide{
+                        right: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

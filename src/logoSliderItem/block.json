@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/logoslideritem",
+	"version": "0.1.5",
+	"title": "Logo Slider Item",
+	"category": "theme",
+    "keywords": ["slider", "slide", "item", "logo"],
+	"description": "A gutenberg block to use for Logo Slider Item.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+    "attributes": {
+        "slideId": {
+            "type": "number",
+            "default": 1
+        },
+        "mediaId": {
+            "type": "number"
+        },
+        "mediaUrl": {
+            "type": "string",
+            "source": "attribute",
+            "selector": "figure img",
+            "attribute": "src",
+            "default": ""
+        },
+        "mediaAlt": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"textdomain": "inxperts-gutenberg-blocks"
+}

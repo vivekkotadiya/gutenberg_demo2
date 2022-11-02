@@ -1,0 +1,300 @@
+@import "../../assets/scss/variables/variables";
+.wp-classic-menu-block {
+	width: 100%;
+	> .menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 100%;
+		text-align: left;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			left: -999em;
+		}
+
+		li:not(:last-child){
+			padding-right: 100px;
+		}
+
+		li {
+			display: inline-block;
+			position: relative;
+
+			> a {
+				color: $secondary;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 22px;
+				line-height: 52px;
+				font-weight: 500;
+			}
+
+			&:hover {
+
+				> ul {
+					left: calc(140px / -2);
+					background-color: transparent;
+					padding: 0px;
+					width: 280px;
+					z-index: 1;
+					padding-top: 32px;
+					> li {
+						background-color: $white;
+						padding: 14px 0px;
+						text-align: center;
+						> a{
+							color: $secondary;
+							font-size: 18px;
+							line-height: 24px;
+							font-weight: 400;
+							text-transform: none;
+						}
+						&:hover {
+							background-color: #F7F7F7;
+							> a{
+								color: $primary;
+							}
+						}
+					}
+		
+				}
+				> a{
+					color: $primary;
+ 				}
+			}
+
+			li {
+				display: block;
+
+				&:hover {
+
+					> ul {
+						left: 100%;
+						top: 0;
+					}
+				}
+			}
+		}
+		
+	}
+}
+#footer{
+	.sec-ct{
+		padding-top: 46px;
+		padding-bottom: 46px;
+		.wp-classic-menu-block {
+			> .menu {
+				text-align: center;
+				li {
+					&:not(:last-child){
+						padding: 0px 36px 0px 0px;
+					}
+					> a {
+						font-size: 14px;
+						line-height: 20px;
+						font-weight: 300;
+						color: $ligh-grey;
+					}
+					&:hover {
+						> a{
+							color: $primary;
+						}
+					}
+				}
+			}
+		}
+	}
+} 
+
+@media only screen and (min-width: $breakpoint-md-large) and (max-width: 1600px){
+	.wp-classic-menu-block{
+		> .menu {
+			li:not(:last-child) {
+				padding-right: calc(8px + (60 - 8) * ((100vw - 1024px) / (1600 - 1024)));
+			}
+		}
+	}
+}
+@media only screen and (max-width: 999px){
+	#header{
+		position: relative;
+	}
+	#header .wp-classic-menu-block{
+		width: 100%;
+	}
+	#header .wp-classic-menu-block{
+		> .menu{
+			display: none;
+		}
+	}
+	#header .wp-classic-menu-block{
+		.hamburger{
+			display: inline-block;
+			cursor: pointer;
+			background-color: $primary;
+			border: 0rem;
+			width: 30px;
+			border-radius: 100px;
+			padding: 14.5px 11px;
+			vertical-align: middle;
+			
+			.line {
+				width: 14px;
+				height: 1px;
+				background-color: $white;
+				transition: 0.4s;
+				display: block;
+				text-align: center;
+				margin: 5px auto;
+			}
+		}
+		.menu_opened {
+			z-index: 100;
+			position: absolute;
+			right: 20px;
+			padding: 0px 0px;
+			max-width: 46px;
+			height: 46px;
+			width: 100%;
+			top: 67px;
+			background-color: #6A6A6A;
+			
+			.igb_menu_icon{
+				position: absolute;
+				top: 14.5px;
+				left: 0px;
+				right: 0px;
+			}
+			.line:first-child {
+				width: 15px;
+				height: 2px;
+				-webkit-transform: rotate(-45deg) translate(-1px, 1px);
+				transform: rotate(-45deg) translate(-1px, 1px);
+		  	}
+		}
+		  
+		.menu_opened .line:nth-child(2) {opacity: 0;}
+		  
+		.menu_opened .line:last-child {
+			width: 15px;
+			height: 2px;
+			-webkit-transform: rotate(45deg) translate(-8px, -8px);
+			transform: rotate(45deg) translate(-8px, -8px);
+		}
+
+		.menu.show_menu {
+			display: block;
+			position: fixed;
+			max-width: 323px;
+			width: 100%;
+			right: 0px;
+			top: 0px;
+			padding: 184px 0px 0px;
+			height: 100%;
+			background-color: $secondary;
+			z-index: 1;
+			transition: .3s ease-in-out;
+			> li{
+				display: block;
+				padding-right: 0px;
+				padding-bottom: 23px;
+				> a{
+					padding-right: 36px;
+					color: $white;
+				}
+				&:hover {
+					> ul{
+						margin: 0px;
+						width: 100%;
+						background-color: transparent;
+						border-top: 2px solid $primary;
+						position: relative;
+						left: 0px;
+						padding: 0px;
+						>li{
+							padding: 30.5px 0px;
+							text-align: right;
+							background-color: transparent;
+							a{
+								padding-right: 36px;
+								color: $white;
+								text-transform: uppercase;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakpoint-md-large){
+	
+	#header{
+		.sec-ct{
+			padding: 14px 10px;
+		}
+	}
+	
+}
+@media screen and (max-width: $breakpoint-sm){
+	
+	#header{
+		.sec-ct{
+			padding: 5px 10px;
+		}
+	}
+	#header{
+		.wp-classic-menu-block{
+			.hamburger:not(.menu_opened){
+				width: 30px;
+				height: 30px;
+				padding: 0px;
+				position: relative;
+				.igb_menu_icon{
+					position: absolute;
+					top: 7px;
+					right: 0px;
+					left: 0px;
+					margin: auto;
+					width: 100%;
+					.line{
+						margin: 3px auto;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakpoint-xs) {
+	#header {
+		.wp-classic-menu-block{
+			.menu_opened{
+				top: 39px;
+			}
+			.menu.show_menu{
+				padding: 156px 0px 0px;
+			}
+		}
+	}
+	#footer .sec-ct{
+		padding-top: 21.5px;
+		padding-bottom: 21.5px;	
+		.wp-classic-menu-block{
+			width: 100%;
+			.menu{
+				li{
+					padding: 0px;
+					display: block;
+					text-align: center;
+					&:not(:last-child){
+						padding: 0px 0px 12px;
+					}
+				}
+			}
+		}
+	}
+}

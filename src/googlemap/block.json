@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-googlemap",
+	"version": "0.1.5",
+	"attributes": {
+		"block_id": {
+			"type": "string",
+			"default": "124887878"
+		},
+		"content": {
+			"type": "array",
+			"source": "html",
+			"selector": "div"
+		},
+		"map_icon_url": {
+			"type": "string",
+			"source": "html"
+		},
+		"lat": {
+			"type": "integer",
+			"default": "52.5069312"
+		},
+		"lang": {
+			"type": "integer",
+			"default": "13.14454"
+		},
+		"zoom": {
+			"type": "integer",
+			"default": "16"
+		}
+	},
+	"title": "Google Map",
+	"category": "theme",
+	"description": "A gutenberg block to Generate GoogleMap.",
+	"keywords": [ "map", "google", "inxpert" ],
+	"textdomain": "inxperts-gutenberg-blocks"
+}

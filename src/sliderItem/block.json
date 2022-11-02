@@ -1,0 +1,47 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/slider-item",
+	"version": "0.1.5",
+	"title": "Slider Item",
+	"category": "theme",
+    "keywords": ["slider", "slide", "item"],
+	"description": "A gutenberg block to use for Slider Item.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+    "attributes": {
+        "slideId": {
+            "type": "number",
+            "default": 1
+        },				
+        "outerParent": {
+            "type": "object",
+            "default": {}
+        },
+        "mediaId": {
+            "type": "number"
+        },
+        "mediaUrl": {
+            "type": "string",
+            "source": "attribute",
+            "selector": "figure img",
+            "attribute": "src",
+            "default": ""
+        },
+        "mediaAlt": {
+            "type": "string",
+            "default": ""
+        },
+        "slideHead": {
+            "type": "string",
+            "default": ""
+        },
+        "igbNav": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"textdomain": "inxperts-gutenberg-blocks"
+}

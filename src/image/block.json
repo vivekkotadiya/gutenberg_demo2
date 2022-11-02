@@ -1,0 +1,45 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-image",
+	"version": "0.1.5",
+	"title": "Image",
+	"category": "theme",
+    "keywords": ["image", "picture", "inxperts"],
+	"description": "A gutenberg block to use for Image.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+        "imageUrl" : {
+            "type": "string",
+            "default": ""
+        },
+		"xlimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "lgimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "mdimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "smimageUrl" : {
+			"type": "string",
+			"default": ""
+		},
+        "imageId" : {
+            "type": "number",
+            "default": ""
+        },
+        "altText" : {
+            "type": "string",
+            "default": ""
+        }
+	},
+	"textdomain": "inxperts-gutenberg-blocks"
+}

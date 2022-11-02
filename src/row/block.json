@@ -1,0 +1,93 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-row",
+	"version": "0.1.5",
+	"title": "Grid - Row",
+	"category": "theme",
+	"description": "A gutenberg block to use Row.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"rowResponsiveMode": {
+			"type": "string",
+			"default": "xs"
+		},
+		"xlAlignH" : {
+			"type": "string",
+			"default": "start"
+		},
+		"lgAlignH" : {
+			"type": "string",
+			"default": "start"
+		},	
+		"mdAlignH" : {
+			"type": "string",
+			"default": "start"
+		},
+		"smAlignH" : {
+			"type": "string",
+			"default": "start"
+		},
+		"xsAlignH" : {
+			"type": "string",
+			"default": "start"
+		},	
+		"xlAlignV" : {
+			"type": "string",
+			"default": "top"
+		},
+		"lgAlignV" : {
+			"type": "string",
+			"default": "top"
+		},
+		"mdAlignV" : {
+			"type": "string",
+			"default": "top"
+		},
+		"smAlignV" : {
+			"type": "string",
+			"default": "top"
+		},
+		"xsAlignV" : {
+			"type": "string",
+			"default": "top"
+		},
+		"xlReverseCol": {
+			"type": "boolean",
+			"default": false
+		},
+		"lgReverseCol": {
+			"type": "boolean",
+			"default": false
+		},
+		"mdReverseCol": {
+			"type": "boolean",
+			"default": false
+		},
+		"smReverseCol": {
+			"type": "boolean",
+			"default": false
+		},
+		"xsReverseCol": {
+			"type": "boolean",
+			"default": false
+		},
+		"colheight": {
+			"type": "boolean",
+			"default": false
+		},
+		"contentwidth": {
+			"type": "boolean",
+			"default": false
+		},
+		"colgap": {
+			"type": "number",
+			"default": 1
+		}
+	},
+	"keywords": ["row", "inxperts"],
+	"textdomain": "inxperts-gutenberg-blocks"
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "inxperts-gutenberg-blocks/inxperts-socialmedia",
+	"version": "0.1.5",
+	"title": "Social Media",
+	"category": "theme",
+	"description": "A gutenberg block to use for social Media List.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"anchor": {
+			 "type": "string"
+		},
+		"menu": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"textdomain": "inxperts-gutenberg-blocks"
+}

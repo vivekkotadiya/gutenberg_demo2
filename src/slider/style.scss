@@ -1,0 +1,150 @@
+@import "../../assets/scss/variables/variables";
+.igb-slider{
+    position: relative;
+    &.igb__slider_autoplay{
+        .igb-slide-main-wrapper{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 5px;
+                display: block;
+                opacity: 0;
+                transform: translateX(-100%);
+                background-color: #C5C5C5;
+                transition: transform 8s;
+            }
+            &.glide__slide--active{
+                &::before{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+    .igb-slide-main-wrapper{
+        position: relative;
+        figure{
+            display: flex;
+            margin: 0px;
+            img{
+                width: 100%;
+            }
+        }
+        .igb-slider-slide__content{
+            position: absolute;
+            .slide_title{
+                margin: 0px;
+                color: $primary;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }              
+    }
+    .slider_navigation{
+        padding: 0px;
+        margin: 0px;
+        left: 0px;
+        transform: unset;
+        .slide_nav{
+            position: relative;
+            width: auto;
+            height: auto;
+            color: $primary;
+            font-size: 14px;
+            line-height: 52px;
+            font-weight: 500;
+            text-transform: uppercase;
+            border: 0px;
+            box-shadow: unset;
+            margin: 0px;
+            background-color: transparent;
+            &.glide__bullet--active::before{
+                content: '';
+                background-color: $primary;
+                height: 2px;
+                width: 30px;
+                left: 0px;
+                bottom: 0px;
+                position: absolute;
+            }
+            &:not(:last-child){
+                margin: 0px 46px 0px 0px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $breakpoint-lg) {
+    .igb-slider{
+        .igb-slide-main-wrapper{
+            .igb-slider-slide__content{
+                bottom: calc( 121px + 52px );
+                left: 278px;
+                .slide_title{
+                    font-size: 91px;
+                    line-height: 97px;
+                    margin-bottom: 57px;
+                }
+            }
+        }
+        .slider_navigation{
+            left: 278px;
+            bottom: 121px;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-md-large) and (min-width: 810px) {
+    .igb-slider{
+        .igb-slide-main-wrapper{
+            .igb-slider-slide__content{
+                bottom: calc( 100px + 52px );
+                left: 61px;
+                .slide_title{
+                    font-size: 75px;
+                    line-height: 85px;
+                    margin-bottom: 43px;
+                }
+            }
+        }
+        .slider_navigation{
+            left: 61px;
+            bottom: 100px;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-sm) and (min-width: 480px) {
+    .igb-slider{
+        .igb-slide-main-wrapper{
+            .igb-slider-slide__content{
+                bottom: calc( 44px + 52px );
+                left: 23px;
+                .slide_title{
+                    font-size: 46px;
+                    line-height: 50px;
+                    margin-bottom: 44px;
+                }
+            }
+        }
+        .slider_navigation{
+            left: 23px;
+            bottom: 58px;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-xs) {
+    .igb-slider{
+        .igb-slide-main-wrapper{
+            .igb-slider-slide__content{
+                bottom: 34px;
+                .slide_title{
+                    font-size: 33px;
+                    line-height: 38px;
+                }
+            }
+        }
+        .slider_navigation{
+            display: none;
+        }
+    }
+}

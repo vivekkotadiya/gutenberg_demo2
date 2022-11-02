@@ -1,0 +1,49 @@
+@import "../assets/scss/main.scss";
+@import "../assets/scss/glide/glide.core.scss";
+@import "../assets/scss/glide/glide.theme.scss";
+
+.text{
+    &-grey{
+        color: $secondary;
+    }
+    &-white{
+        color: $white;
+    }
+    &-orange{
+        color: $primary;
+    }
+}
+.text{
+    &-left{
+        text-align: left;
+    }
+    &-center{
+        text-align: center;
+    }
+    &-right{
+        text-align: right;
+    }
+}
+
+// Header
+#header{
+    border-bottom: 5px solid $primary;
+    .sec-ct{
+        padding: 23px 77px 25px 59px;
+    }
+}
+@media only screen and (max-width: 767px){
+    
+    .footer-block > .wp-block-group, .inxperts-contactInfo-wrapper{
+        padding-left: 0.938rem!important;
+        padding-right: 0.938rem!important;
+    }
+    #header{
+        .wp-block-site-logo{
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+}
